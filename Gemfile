@@ -9,15 +9,19 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets','2.11.0'
 gem 'bcrypt-ruby', '3.1.2'
 
-# Use sqlite3 as the database for Active Record
+gem 'pg', '0.15.1'
+
+gem 'rb-readline'
+
+	# Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
+#  gem 'sqlite3', '1.3.8'
+#  gem 'pg', '0.15.1'
 	gem 'rspec-rails','2.13.1'
   gem 'guard-rspec'
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
